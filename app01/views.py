@@ -305,6 +305,7 @@ def login(request):
     if request.method == "GET":
         form = LoginForm()
         return render(request, 'login.html', {'form': form})
+
     form = LoginForm(data=request.POST)
     if form.is_valid():
         # 验证码校验
