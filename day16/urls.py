@@ -50,4 +50,9 @@ urlpatterns = [
     path('order/delete/', views.order_delete),
     path('order/detail/',views.order_detail),
     path('order/edit/',views.order_edit),
+    #数据统计
+    path('chart/list/',views.chart_list),
+    path('chart/bar/',views.chart_bar),
+    path('chart/pie/',views.chart_pie),
+    path('chart/line/', views.chart_line),
 ]
