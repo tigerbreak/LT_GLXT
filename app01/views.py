@@ -285,9 +285,9 @@ class LoginForm(BootStrapForm):
         required=True
     )
 
-    def clean_password(self):
-        pwd = self.cleaned_data.get("password")
-        return md5(pwd)
+   # def clean_password(self):
+   #     pwd = self.cleaned_data.get("password")
+   #     return md5(pwd)
 
 
 def image_code(request):
